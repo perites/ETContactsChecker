@@ -66,11 +66,13 @@ FROM _Subscribers
 
 ## Important Notes
 
+* **The contact checks depend on this script **running on your machine** and having an active internet connection. If your computer is turned off or offline, the checks will not be performed.**
 * **Do not move or delete** this script file — it will stop working.
 * If you need to move it to another folder:
-
   1. Set `DELETE_REPEATER = True`.
   2. Run the script once to disable the current scheduled task.
   3. Move the file to the new location.
   4. Set `DELETE_REPEATER = False` and run it from the new location.
-* **The contact checks depend on this script **running on your machine** and having an active internet connection. If your computer is turned off or offline, the checks will not be performed.**
+     
+* If you need to receive notifications for two or more contracts, simply create additional files, each with its own settings.
+
