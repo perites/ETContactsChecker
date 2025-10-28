@@ -36,7 +36,7 @@ FROM _Subscribers
 | Field                    | Description                                                   |
 | ------------------------ | ------------------------------------------------------------- |
 | **CONTRACT_NAME**        | Any name that identifies your contract                        |
-| **SLACK_USER_ID**        | In Slack: **Profile → ⋯ (three dots) → Copy Member ID**       |
+| **SLACK_USER_ID**        | In Slack: Open **profile of the person you want to receive notifications** → click **⋯ (three dots)** → select **Copy Member ID**|
 | **WORKFLOW_WEBHOOK_URL** | The Slack webhook URL provided for your workflow              |
 | **SFMC_SUBDOMAIN**       | **API Endpoint** from Prod                                    |
 | **CLIENT_ID**            | **Client ID** from Prod                                       |
