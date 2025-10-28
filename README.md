@@ -37,13 +37,13 @@ FROM _Subscribers
 | ------------------------ | ------------------------------------------------------------- |
 | **CONTRACT_NAME**        | Any name that identifies your contract                        |
 | **SLACK_USER_ID**        | In Slack: Open **profile of the person you want to receive notifications** → click **⋯ (three dots)** → select **Copy Member ID**|
-| **WORKFLOW_WEBHOOK_URL** | The Slack webhook URL provided for your workflow              |
+| **WORKFLOW_WEBHOOK_URL** | The Slack webhook URL (can be found in slack message)         |
 | **SFMC_SUBDOMAIN**       | **API Endpoint** from Prod                                    |
 | **CLIENT_ID**            | **Client ID** from Prod                                       |
 | **CLIENT_SECRET**        | **Client Secret** from Prod                                   |
 | **DE_KEY**               | External Key of the Data Extension created in Step 1          |
 | **MAX_CONTACTS_LIMIT**   | Contact threshold that triggers a Slack warning               |
-| **IGNORE_WARNING**       | `True` or `False` — if `True`, Slack warnings will be ignored |
+| **IGNORE_WARNING**       | `True` or `False` — if `True`, warnings won't be sent in Slack|
 | **DELETE_REPEATER**      | `True` or `False` — set `True` to stop or reset the checker   |
 
 4. Save the changes after filling in all fields.
