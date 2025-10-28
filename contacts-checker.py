@@ -136,7 +136,8 @@ if __name__ == "__main__":
         if not ph.plist_path.exists():
             ph.create_plist()
             ph.load_plist()
-            sh.send_message(f"Loaded plist into launchd. The script will now run every {ph.run_interval_seconds} seconds and check contacts in {CONTRACT_NAME}.")
+            total_contacts_count = th.get_subscriber_count()
+            sh.send_message(f"Loaded plist into launchd. The script will now run every {ph.run_interval_seconds} seconds and check contacts in {CONTRACT_NAME}.\nData to check if everything working: currently you have {total_contacts_count} contacts in your contract and limit is {MAX_CONTACTS_LIMIT}")
         
         total_contacts_count = th.get_subscriber_count()
         if (total_contacts_count > MAX_CONTACTS_LIMIT) and (not IGNORE_WARNING):
